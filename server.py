@@ -16,7 +16,7 @@ from datetime import datetime, date, timezone, timedelta
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
 
-mongo_url = os.environ['MONGO_URL']
+MONGO_URL = "mongodb+srv://daril93_db_user:cwjIKbptMnvPCIR7y@cluster0.eqsbuvj.mongodb.net/"
 client = AsyncIOMotorClient(mongo_url)
 db = client[os.environ['DB_NAME']]
 
