@@ -18,7 +18,7 @@ load_dotenv(ROOT_DIR / '.env')
 
 MONGO_URL = "mongodb+srv://daril93_db_user:cwjIKbptMnvPCIR7y@cluster0.eqsbuvj.mongodb.net/"
 client = AsyncIOMotorClient(MONGO_URL)
-db = client[os.environ['DB_NAME']]
+db = client["scadenzapro_database"]
 
 # Push notifications
 PUSH_BASE_URL = "https://integrations.emergentagent.com"
